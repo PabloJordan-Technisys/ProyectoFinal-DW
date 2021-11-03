@@ -190,12 +190,14 @@ footer {
 .grid-container {
   display: grid;
   grid-gap: 20px;
+
   grid-template-areas:
     "header header"
     "tabla tabla"
     "ol ol"
     "ul ul"
     "footer footer";
+  align-content: center;
 }
 
 .grid-item1 {
@@ -204,21 +206,31 @@ footer {
 .grid-item2 {
   grid-area: tabla;
   padding-left: 15px;
+  margin-left: 45%;
+  padding: 30px;
 }
 
 .grid-item3 {
   grid-area: ol;
   padding-left: 15px;
+  margin-left: 45%;
+  padding: 30px;
 }
 
 .grid-item4 {
   grid-area: ul;
   padding-left: 15px;
+  margin-left: 45%;
+  padding: 30px;
 }
 
 .grid-item5 {
   grid-area: footer;
   padding-right: 15px;
+  margin: 10px;
+}
+.main-items {
+  align-self: center;
 }
 
 .lorem {
