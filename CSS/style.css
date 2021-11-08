@@ -14,6 +14,7 @@ h1 {
 }
 
 body {
+  min-height: 100vh;
   background-color: #33312e;
   background: linear-gradient(to bottom, black, gray);
   font-family: "Roboto Slab", serif;
@@ -23,27 +24,9 @@ body {
   line-height: 30px;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .tabla {
   color: aliceblue;
   background-color: gray;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-}
-nav {
-  align-self: center;
-}
-
-.menu {
-  display: flex;
 }
 
 .menu--item {
@@ -69,120 +52,15 @@ nav {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   font-size: 2rem;
   text-align: right;
   background: black;
   padding-right: 15px;
-}
-
-.padre-flex {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-}
-
-footer {
   background-color: black;
   color: white;
-}
-
-.links-padre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.links-hijos {
-  flex: 1 1 500px;
-  height: 350px;
-  max-width: 500px;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: white;
-  font-size: 70px;
-  font-weight: bold;
-  -webkit-text-stroke: 2px black;
-  background-size: cover;
-  background-position: center center;
-  padding: 5px;
-  padding-bottom: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  transition: 250ms;
-  border-radius: 5px;
-}
-.links-hijos:hover {
-  transform: scale(1.05, 1.05);
-}
-
-.hijo1 {
-  background-image: url("../img/procesadores.jpeg");
-  padding-top: 30%;
-}
-
-.hijo2 {
-  background-image: url("../img/ram.jpeg");
-  padding-top: 30%;
-}
-
-.hijo3 {
-  background-image: url("../img/mother.jpeg");
-  padding-top: 30%;
-}
-.hijo4 {
-  background-image: url("../img/vga.jpeg");
-  padding-top: 30%;
-}
-.hijo5 {
-  background-image: url("../img/power.jpeg");
-  padding-top: 30%;
-}
-.hijo6 {
-  background-image: url("../img/case.jpeg");
-  padding-top: 30%;
-}
-.hijo7 {
-  background-image: url("../img/storage.jpeg");
-  padding-top: 30%;
-}
-.hijo8 {
-  background-image: url("../img/cooling.jpeg");
-  padding-top: 30%;
-}
-.hijo9 {
-  background-image: url("../img/monitor.jpeg");
-  padding-top: 30%;
-}
-.hijo10 {
-  background-image: url("../img/vr.jpeg");
-  padding-top: 30%;
-}
-.hijo11 {
-  background-image: url("../img/3dprint.jpeg");
-  padding-top: 30%;
-}
-.hijo12 {
-  background-image: url("../img/headset.jpeg");
-  padding-top: 30%;
-}
-.hijo13 {
-  background-image: url("../img/perif.jpeg");
-  padding-top: 30%;
-}
-.hijo14 {
-  background-image: url("../img/pcArmada.jpeg");
-  padding-top: 30%;
-}
-.hijo15 {
-  background-image: url("../img/chair.jpeg");
-  padding-top: 30%;
-}
-.hijo16 {
-  background-image: url("../img/chair.jpeg");
-  padding-top: 30%;
 }
 
 /*CSS de Acerca de*/
@@ -244,48 +122,93 @@ footer {
 
 /*CSS Vendedores*/
 
+.carouselExampleIndicators {
+  display: flex;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 500px;
+  margin: 20px;
+}
+
 /*CSS contacto----------------------------------------------------*/
 
+.bodyContacto {
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0.35898109243697474) 100%
+  );
+}
+.navContacto {
+  width: 100%;
+}
 .main-contacto {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-.formulario {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border-color: gray;
-  color: white;
-  background-color: gray;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-
-.item-contacto {
+.navbar {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
 }
-.btn-form {
-  width: 40%;
+.contenedor-form {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(95, 95, 95) 0%,
+    rgba(44, 44, 44, 0.359) 100%
+  );
+  display: flex;
+  justify-content: center;
+  width: 50%;
   border-radius: 10px;
-  height: 40px;
-  font-size: 1.5rem;
-  background-color: rgb(105, 104, 104);
-  border: none;
+  border-width: 12x;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  color: white;
+  margin: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btn-form {
+  min-width: 200px;
+  width: 40%;
+  margin: 20px;
+}
+
+/*Index*/
+
+.card {
+  border-color: black;
+  border-width: 3px;
+  border-radius: 5px;
   transition: 0.5s;
-  box-shadow: 7px -3px 2px black;
 }
 
-#enviar:hover {
-  background-color: green;
-  transform: scale(1.05);
+.card:hover {
+  transform: scale(1.1);
 }
 
-#reestablecer:hover {
-  background-color: red;
-  transform: scale(1.05);
+.card-body {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  margin: 20px;
+  text-decoration: none;
 }
