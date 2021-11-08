@@ -65,59 +65,20 @@ footer {
 
 /*CSS de Acerca de*/
 
-.grid-container {
-  display: grid;
-  grid-gap: 20px;
-
-  grid-template-areas:
-    "header header"
-    "tabla tabla"
-    "ol ol"
-    "ul ul"
-    "footer footer";
-  align-content: center;
+.list-group {
+  width: 50%;
+  margin: 20px;
 }
 
-.grid-item1 {
-  grid-area: header;
+.tabla {
+  width: 50%;
+  margin: 20px;
 }
-.grid-item2 {
-  grid-area: tabla;
-  padding-left: 15px;
-  margin-left: 45%;
-  padding: 30px;
-}
-
-.grid-item3 {
-  grid-area: ol;
-  padding-left: 15px;
-  margin-left: 45%;
-  padding: 30px;
+.main-acercade {
+  display: flexbox;
+  justify-content: center;
 }
 
-.grid-item4 {
-  grid-area: ul;
-  padding-left: 15px;
-  margin-left: 45%;
-  padding: 30px;
-}
-
-.grid-item5 {
-  grid-area: footer;
-  padding-right: 15px;
-  margin: 10px;
-}
-.main-items {
-  align-self: center;
-}
-
-.lorem {
-  width: auto;
-
-  padding: 15px;
-  align-content: center;
-  color: white;
-}
 /*CSS Comunidad*/
 
 /*CSS Vendedores*/
@@ -209,6 +170,5 @@ a {
 }
 
 .row {
-  margin: 20px;
   text-decoration: none;
 }
