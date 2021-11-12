@@ -1,0 +1,31 @@
+.containter-comunidad {
+  margin: 20px;
+  padding: 10px;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(95, 95, 95) 0%,
+    rgba(44, 44, 44, 0.359) 100%
+  );
+}
+
+td {
+  color: white;
+}
+
+th {
+  color: white;
+}
+
+.a-comunidad {
+  color: white;
+}
+
+.a-comunidad:hover {
+  color: red;
+}
+
+.row-comunidad {
+  color: white;
+}
