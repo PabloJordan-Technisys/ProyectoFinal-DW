@@ -40,3 +40,22 @@
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .form-control {
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    margin-left: 20px;
+  }
+
+  .btn-form {
+    min-width: 150px;
+    width: 40%;
+    margin: 20px;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+}
