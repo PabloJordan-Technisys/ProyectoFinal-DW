@@ -29,6 +29,10 @@
   margin-top: 50px;
 }
 
+.card-h {
+  min-height: 300px;
+}
+
 .contenedor-form {
   background: black;
   background: linear-gradient(180deg, #5f5f5f 0%, rgba(44, 44, 44, 0.359) 100%);
