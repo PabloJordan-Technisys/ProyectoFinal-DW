@@ -45,17 +45,21 @@
   .form-control {
     display: flex;
     justify-content: center;
-    max-width: 150px;
+    max-width: 220px;
     margin-left: 20px;
   }
 
   .btn-form {
-    min-width: 150px;
-    width: 40%;
+    min-width: 220px;
+    width: 50%;
     margin: 20px;
   }
 
   .form-label {
     font-size: 1rem;
+  }
+
+  .contenedor-form {
+    width: 80%;
   }
 }
