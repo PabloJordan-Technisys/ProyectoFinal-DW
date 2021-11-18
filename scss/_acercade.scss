@@ -13,6 +13,11 @@
   justify-content: center;
 }
 
+.container-acercade {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .list-group {
     width: 80%;
