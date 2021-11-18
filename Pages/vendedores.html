@@ -91,7 +91,7 @@
       <h1 class="titulos tituloH1">Vendedores Destacados</h1>
       <div
         id="carouselExampleIndicators"
-        class="carousel slide container"
+        class="carousel slide container carousel-container"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -99,7 +99,7 @@
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            class="active"
+            class="active carousel-container"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -149,7 +149,7 @@
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev carousel-container"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
@@ -158,13 +158,16 @@
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-control-next carousel-container"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span
+            class="carousel-control-next-icon carousel-container"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden carousel-container">Next</span>
         </button>
       </div>
       <div class="container container-vendedores">
