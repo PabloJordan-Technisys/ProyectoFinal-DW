@@ -1,5 +1,5 @@
 .list-group {
-  width: 50%;
+  width: 80%;
   margin: 20px;
 }
 
@@ -14,11 +14,11 @@
   justify-content: center;
 }
 
-.container-acercade {
-  display: flex;
-  justify-content: center;
+@media only screen and (max-width: 600px) {
+  .list-group {
+    width: 80%;
+  }
 }
-
 .carousel {
   width: 90%;
   height: 500px;
