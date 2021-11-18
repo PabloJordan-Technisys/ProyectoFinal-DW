@@ -1,6 +1,6 @@
 .containter-comunidad {
-  margin: 20px;
-  padding: 10px;
+  margin: 25px;
+  padding: 25px;
 
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -28,4 +28,9 @@ th {
 
 .row-comunidad {
   color: white;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: smaller;
+  }
 }
